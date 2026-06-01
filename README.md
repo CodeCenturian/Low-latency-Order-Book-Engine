@@ -91,6 +91,8 @@ python3 ../benchmark/report.py latency_results.csv
 
 This will produce `latency_results.csv` and a visual report image (e.g. `latency_report.png`).
 
+![LOBE Latency CDF](image.png)
+
 ---
 
 ## 💻 Getting Started
