@@ -8,6 +8,8 @@
 #include <iomanip>
 #include <ctime>
 
+using namespace std;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // High-precision timer using CLOCK_MONOTONIC_RAW
 // MONOTONIC_RAW is not affected by NTP adjustments — more stable than REALTIME

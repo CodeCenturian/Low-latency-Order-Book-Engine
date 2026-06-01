@@ -55,7 +55,7 @@ else
 fi
 
 # Compile TypeScript
-npm run build -- --silent 2>/dev/null || npx tsc
+npm run build 2>/dev/null || npx tsc
 echo "  ✓ TypeScript compiled"
 
 # ── Step 3: Start server ──────────────────────────────────────────────────────

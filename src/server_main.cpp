@@ -5,6 +5,8 @@
 #include <sstream>
 #include <iomanip>
 
+using namespace std;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Minimal JSON field extractors
 //

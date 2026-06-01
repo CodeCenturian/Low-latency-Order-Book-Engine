@@ -19,7 +19,8 @@
 import * as http       from "http";
 import * as fs         from "fs";
 import * as path       from "path";
-import { spawn, ChildProcessWithoutNullStreams } from "child_process";
+import { spawn } from "child_process";
+import { Readable, Writable }                    from "stream";
 import { WebSocketServer, WebSocket }            from "ws";
 
 // ── Config ────────────────────────────────────────────────────────────────────
@@ -28,7 +29,7 @@ const ENGINE_PATH  = path.resolve(__dirname, "../../build/lobe_server");
 const PUBLIC_DIR   = path.resolve(__dirname, "../public");
 
 // ── Spawn the C++ engine ──────────────────────────────────────────────────────
-function spawnEngine(): ChildProcessWithoutNullStreams {
+function spawnEngine(): import("child_process").ChildProcessByStdio<Writable, Readable, null> {
   console.log(`[engine] Spawning: ${ENGINE_PATH}`);
   const proc = spawn(ENGINE_PATH, [], { stdio: ["pipe", "pipe", "inherit"] });
 

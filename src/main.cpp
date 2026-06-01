@@ -5,6 +5,8 @@
 #include <string>
 #include <iomanip>
 
+using namespace std;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // CLI helper — print a trade whenever it occurs
 // ─────────────────────────────────────────────────────────────────────────────
